@@ -1,14 +1,5 @@
-/**
- * @format
- */
+import { addNumbers } from "../functions/addNumbers";
 
-import 'react-native';
-import React from 'react';
-import App from '../App';
-
-// Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
-
-it('renders correctly', () => {
-  renderer.create(<App />);
+test("Add Two Numbers", () => {
+  expect(addNumbers(1, 2)).not.toEqual(4);
 });
